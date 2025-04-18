@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  rectapp:
+    image: reactapp:latest
+    container_name: reactapp
+    working_dir: /app
+    volumes:
+      - node-volume:/app
+    ports:
+      - "3000:3000"
+volumes:
+     node-volume:
+
+    
